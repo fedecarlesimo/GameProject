@@ -31,7 +31,7 @@ struct EventInfo {                         //struttura che associa un valore ad 
 	EventInfo(int event) {
 		code = event;
 	}
-	union {                                //usiamo union per salvare il codice dell'evento
+	union {                                //usiamo union per salvare il codice dell'evento 
 		int code; 
 	};
 	
