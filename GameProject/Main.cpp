@@ -1,30 +1,11 @@
-#include <SFML/Graphics.hpp>
+#include "Game.h"
 
-int main()
-{
-	sf::RenderWindow window(sf::VideoMode(800, 600),
-		"Hello SFML", sf::Style::Default);
+void main(int argc, void** argv[]) {
 
-	sf::Font font;
-	font.loadFromFile("C:/Windows/Fonts/Arial.ttf");
-
-	sf::Text text;
-	text.setFont(font);
-	text.setPosition(200, 200);
-	text.setString("Hello SFML");
-
-	while (window.isOpen())
-	{
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				window.close();
-		}
-		window.clear();
-		window.draw(text);
-		window.display();
+	Game game;
+	while (!game.GetWindow()->IsDone()) {
+		game.Update();
+		game.Render();
+		game.LateUpdate();
 	}
-
-	return 0;
 }

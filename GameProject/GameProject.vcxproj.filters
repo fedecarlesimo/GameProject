@@ -24,12 +24,42 @@
     <ClCompile Include="Main.cpp">
       <Filter>File di risorse</Filter>
     </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Intro.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="State_MainMenu.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="EventManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedContext.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseState.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Intro.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="State_MainMenu.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
